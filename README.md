@@ -1,16 +1,17 @@
 # Disk-Buttler
 
-Will help manage multiple hdds.
+Poor-mans raid to help manage multiple drives.
 
 Good doc is work in progress. ;) .
 
 ## Description
-Reads the folder names from source directory and creates empty folder in the destionen folder.
 
-## Useage
-disk-buttler {source-folder} {destination-folder}
+Reads the folder names from the source directory and creates empty folder in the destionen folder.
+
+## Usage
+
+    $ disk-buttler source-folder destination-folder
 
 ## Licence
-MIT
 
->please give credit ;)
+MIT, but please give credit ;)
