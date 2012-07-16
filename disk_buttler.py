@@ -28,3 +28,8 @@ def mirror_dir(src, dst):
 		os.mkdir(dst_path)
 
 mirror_dir(src, dst)
+
+src_serien = os.path.join(src, "Serien")
+dst_serien = os.path.join(dst, "Serien")
+
+mirror_dir(src_serien, dst_serien)
