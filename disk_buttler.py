@@ -2,9 +2,39 @@
 import sys
 import os
 
+import argparse
+
+
+########################################## 
+#  	Argument parsing
+##########################################
+# See http://docs.python.org/library/argparse.html#module-argparse
+
+# create a argument parser from the library
+args_parser = argparse.ArgumentParser(description='Disk Buttler')
+
+# 1st argument is the source directory
+args_parser.add_argument('source', 
+	type=str,
+	help='directory to read the subfolder names from')
+
+# 2nd argument is the source directory
+args_parser.add_argument('destination', 
+	type=str,
+	help='directory where the new empty subfolders should be created')
+
+arguments = args_parser.parse_args()
+
+########################################## 
+#  	Argument parsing END
+##########################################
+
+
 #get src and dst path from user
-src = os.path.abspath(sys.argv[1])
-dst = os.path.abspath(sys.argv[2])
+src = arguments.source
+dst = arguments.destination
+
+
 
 
 def mirror_dir(src, dst):
