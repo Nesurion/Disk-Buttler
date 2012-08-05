@@ -59,7 +59,7 @@ def mirror_dir(src, dst):
 
 mirror_dir(src, dst)
 
-src_serien = os.path.join(src, "Serien")
-dst_serien = os.path.join(dst, "Serien")
+src_serien = os.path.join(src, "tv")
+dst_serien = os.path.join(dst, "tv")
 
 mirror_dir(src_serien, dst_serien)
